@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.rsh.tkachenko'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    implementation("io.reactivex.rxjava2:rxjava:2.2.21")
+    implementation("com.google.guava:guava:31.1-jre")
+}
+
+test {
+    useJUnitPlatform()
+}
